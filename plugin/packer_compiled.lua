@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
+  },
   ["flutter-reload.vim"] = {
     loaded = true,
     path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/flutter-reload.vim",
