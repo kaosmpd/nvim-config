@@ -2,7 +2,10 @@
 require("transparent").setup({enable = true})
 
 -- chadtree
-require("editor/chadtree")
+-- require("editor/chadtree")
+
+-- nvim-tree
+require("editor/nvim-tree")
 
 -- bufferline
 require("bufferline").setup({})

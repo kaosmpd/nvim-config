@@ -12,10 +12,10 @@ map("v", "<", "<gv", silent_options)
 map("v", ">", ">gv", silent_options)
 
 -- nvim-tree
--- map('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', options )
+map('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', options )
 
 -- chadtree
-map("n", "<C-n>", "<cmd>CHADopen<cr>", options)
+-- map("n", "<C-n>", "<cmd>CHADopen<cr>", options)
 
 -- bufferline
 map("n", "<leader>n", "<cmd>BufferLineCycleNext<CR>", silent_options)
@@ -31,6 +31,7 @@ map("n", "<leader>g", "<cmd>Telescope live_grep<CR>", silent_options)
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>", silent_options)
 map("n", "ca", "<cmd>Lspsaga code_action<CR>", silent_options)
 map("n", "<leader>;", "<cmd>Lspsaga diagnostic_jump_next<CR>", silent_options)
+map("n", "<leader>r", "<cmd>Lspsaga rename<CR>", silent_options)
 
 -- vsnip
 -- map("i", "<Tab>", "vsnip#jumpable(1)", silent_options)

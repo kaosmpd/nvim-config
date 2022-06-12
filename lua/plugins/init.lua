@@ -8,11 +8,17 @@ return require("packer").startup(
     ---
     use "xiyaowong/nvim-transparent"
     ---
-    use {
-      "ms-jpq/chadtree",
-      branch = "chad",
-      run = "python3 -m chadtree deps"
-    }
+    -- use {
+    --   "ms-jpq/chadtree",
+    --   branch = "chad",
+    --   run = "python3 -m chadtree deps"
+		use {
+			'kyazdani42/nvim-tree.lua',
+			requires = {
+				'kyazdani42/nvim-web-devicons', 
+			},
+			tag = 'nightly'
+		}
     ---
     use {
       "akinsho/bufferline.nvim",
@@ -23,7 +29,7 @@ return require("packer").startup(
     use {
       "nvim-telescope/telescope.nvim",
       requires = {{"nvim-lua/plenary.nvim"}},
-      tag = "nvim-0.5.1"
+      -- tag = "nvim-0.5.1"
     }
     ---
     use {
