@@ -23,7 +23,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     preserve_window_proportions = false,
     number = false,
     relativenumber = false,
-    signcolumn = "yes",
+    signcolumn = "no",
     mappings = {
       custom_only = false,
       list = {
