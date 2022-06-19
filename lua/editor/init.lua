@@ -8,7 +8,7 @@ require("transparent").setup({enable = true})
 require("editor/nvim-tree")
 
 -- bufferline
-require("bufferline").setup({})
+require("editor/bufferline")
 
 -- telescope
 require("editor/telescope")
