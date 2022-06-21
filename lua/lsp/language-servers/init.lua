@@ -22,6 +22,13 @@ lsp.emmet_ls.setup({
 -- let g:go_def_mode='gopls'
 -- let g:go_info_mode='gopls'
 -- ]]
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
+}
+lsp.denols.setup({
+	capabilities = capabilities,
+	on_attach = fmt.on_attach,
+})
 
 lsp.volar.setup {
   capabilities = capabilities,
