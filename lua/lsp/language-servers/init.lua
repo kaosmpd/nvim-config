@@ -7,8 +7,8 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 lsp.tsserver.setup {
   capabilities = capabilities,
 	on_attach = fmt.on_attach,
-  -- root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
-	root_dir = vim.loop.cwd
+  root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
+	-- root_dir = vim.loop.cwd
 }
 lsp.emmet_ls.setup({
 	capabilities = capabilities,

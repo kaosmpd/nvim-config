@@ -17,7 +17,7 @@ return require("packer").startup(
 			requires = {
 				'kyazdani42/nvim-web-devicons', 
 			},
-			tag = 'nightly'
+			-- tag = 'nightly'
 		}
     ---
     use {

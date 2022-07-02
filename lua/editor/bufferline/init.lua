@@ -64,7 +64,7 @@ require('bufferline').setup {
     -- separator_style = "slant" | "thick" | "thin" | { 'any', 'any' },
 		separator_style = "thick",
     enforce_regular_tabs = false,
-    always_show_bufferline = false,
+    always_show_bufferline = true,
 		sort_by = "insert_after_current",
   }
 }
