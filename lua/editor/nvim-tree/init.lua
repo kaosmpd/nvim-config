@@ -18,7 +18,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     centralize_selection = false,
     width = 25,
     -- height = 30,
-    hide_root_folder = false,
+    hide_root_folder = true,
     side = "left",
     preserve_window_proportions = false,
     number = false,
@@ -32,7 +32,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   renderer = {
-    add_trailing = false,
+    add_trailing = true,
     group_empty = false,
     highlight_git = false,
     full_name = false,
@@ -54,7 +54,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       symlink_arrow = " ➛ ",
       show = {
         file = true,
-        folder = true,
+        folder = false,
         folder_arrow = true,
         git = false,
       },
