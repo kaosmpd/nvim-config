@@ -30,9 +30,9 @@ require('bufferline').setup {
     tab_size = 18,
     diagnostics =  "nvim_lsp",
     diagnostics_update_in_insert = false,
-    diagnostics_indicator = function(count, level, diagnostics_dict, context)
-      return "("..count..")"
-    end,
+    -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
+    --   return "("..count..")"
+    -- end,
     -- NOTE: this will be called a lot so don't do any heavy processing here
     custom_filter = function(buf_number, buf_numbers)
       -- filter out filetypes you don't want to see

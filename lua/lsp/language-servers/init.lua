@@ -4,17 +4,17 @@ local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protoco
 fmt.setup {}
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-lsp.tsserver.setup {
-  capabilities = capabilities,
-	on_attach = fmt.on_attach,
-  root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
-	-- root_dir = vim.loop.cwd
-}
-lsp.emmet_ls.setup({
-	capabilities = capabilities,
-	on_attach = fmt.on_attach,
-	filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css' },
-})
+-- lsp.tsserver.setup {
+--   capabilities = capabilities,
+-- 	on_attach = fmt.on_attach,
+--   root_dir = require("lspconfig").util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
+-- 	-- root_dir = vim.loop.cwd
+-- }
+-- lsp.emmet_ls.setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = fmt.on_attach,
+-- 	filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css' },
+-- })
 
 
 -- lsp.gopls.setup {}
@@ -25,10 +25,10 @@ lsp.emmet_ls.setup({
 vim.g.markdown_fenced_languages = {
   "ts=typescript"
 }
-lsp.denols.setup({
-	capabilities = capabilities,
-	on_attach = fmt.on_attach,
-})
+-- lsp.denols.setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = fmt.on_attach,
+-- })
 
 lsp.volar.setup {
   capabilities = capabilities,
@@ -56,5 +56,6 @@ lsp.dartls.setup {
 	on_attach = fmt.on_attach,
 }
 
+lsp.zls.setup({})
 -- lsp.rust_analyzer.setup({})
 -- vim.cmd("let g:rustfmt_autosave = 1")

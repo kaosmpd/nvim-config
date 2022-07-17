@@ -76,7 +76,8 @@ return require("packer").startup(
 			"evanleck/vim-svelte",
 			requires = {"pangloss/vim-javascript", "evanleck/vim-svelte"}
 		}
-		use "leafOfTree/vim-vue-plugin"
+		-- use "leafOfTree/vim-vue-plugin"
+		use "posva/vim-vue"
 		use "dart-lang/dart-vim-plugin"
   end
 )

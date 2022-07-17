@@ -229,10 +229,10 @@ _G.packer_plugins = {
     path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
   },
-  ["vim-vue-plugin"] = {
+  ["vim-vue"] = {
     loaded = true,
-    path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/vim-vue-plugin",
-    url = "https://github.com/leafOfTree/vim-vue-plugin"
+    path = "/Users/kaos/.local/share/nvim/site/pack/packer/start/vim-vue",
+    url = "https://github.com/posva/vim-vue"
   }
 }
 
