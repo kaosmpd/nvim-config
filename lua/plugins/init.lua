@@ -14,6 +14,7 @@ return require("packer").startup(
     --   run = "python3 -m chadtree deps"
 		use {
 			'kyazdani42/nvim-tree.lua',
+			tag = 'nightly',
 			requires = {
 				'kyazdani42/nvim-web-devicons', 
 			},
@@ -56,16 +57,33 @@ return require("packer").startup(
     use "onsails/lspkind.nvim"
     use "tami5/lspsaga.nvim"
     ---
-    use "hrsh7th/cmp-nvim-lsp"
-    use "hrsh7th/cmp-buffer"
-    use "hrsh7th/cmp-path"
-    use "hrsh7th/cmp-cmdline"
-    use "hrsh7th/nvim-cmp"
-    use "hrsh7th/cmp-vsnip"
-    use "hrsh7th/vim-vsnip"
+		use {
+			'ms-jpq/coq_nvim',
+			branch = 'coq'
+		}
+		use {
+			'ms-jpq/coq.artifacts',
+			branch = 'artifacts'
+		}
+    -- use "hrsh7th/cmp-nvim-lsp"
+    -- use "hrsh7th/cmp-buffer"
+    -- use "hrsh7th/cmp-path"
+    -- use "hrsh7th/cmp-cmdline"
+    -- use "hrsh7th/nvim-cmp"
+    -- use "hrsh7th/cmp-vsnip"
+    -- use "hrsh7th/vim-vsnip"
 
 		-------- Specific language ----------
     ---
+		-- use 'pangloss/vim-javascript'
+		-- use 'leafgarland/typescript-vim'
+		-- use 'peitalin/vim-jsx-typescript'
+		use {
+		'styled-components/vim-styled-components',
+		branch = 'main',
+		}
+		use 'jparise/vim-graphql'
+		---
     use {
       "fatih/vim-go",
       run = ":GoUpdateBinaries"
